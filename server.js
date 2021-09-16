@@ -1,6 +1,8 @@
+const path = require('path');
 const express = require('express');
 const routes = require('.')
-const sequelize = require('./config/connection')
+const sequelize = require('./config/connection');
+const { dirname } = require('path');
 require('dotenv').config();
 
 const app = express();
@@ -12,7 +14,8 @@ app.use(express.urlencoded({ extended: true}));
 // turn on routes
 app.use(routes);
 
-
+// public folder route
+app.use(express.static(path.join(_dirname, 'public')));
 
 
 // turn on connection to db and server
