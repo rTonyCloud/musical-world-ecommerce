@@ -1,16 +1,33 @@
 {
   "name": "musical-world",
   "version": "1.0.0",
-  "description": "",
+  "description": "- npm install express-handlebars\r - npm install express\r - npm install\r - npm install --save mysql2\r - npm install sequelize\r - npm install dotenv\r - npm install bcrypt\r - npm install express-session\r - npm install connect-session-sequelize\r - npm install -g nodemon",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seeds": "node seeds/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mirza Awal",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.2",
     "dotenv": "^10.0.0",
-    "express": "^4.17.1"
-  }
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rTonyCloud/music-world-ecommerce.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rTonyCloud/music-world-ecommerce/issues"
+  },
+  "homepage": "https://github.com/rTonyCloud/music-world-ecommerce#readme"
 }
