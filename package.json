@@ -13,17 +13,12 @@
   "author": "Mirza Awal",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "bcrypt": "^5.0.1",
-=======
-    "bcrpyt": "^2.0.0",
->>>>>>> 77825f4b7f52cdc8c392d9c7b92f598c491dd59f
     "connect-session-sequelize": "^7.1.2",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.3",
     "express-session": "^1.17.2",
-<<<<<<< HEAD
     "mysql2": "^2.3.0",
     "sequelize": "^6.6.5"
   },
@@ -35,13 +30,4 @@
     "url": "https://github.com/rTonyCloud/music-world-ecommerce/issues"
   },
   "homepage": "https://github.com/rTonyCloud/music-world-ecommerce#readme"
-=======
-    "handlebars": "^4.7.7",
-    "mysql2": "^2.3.0",
-    "sequelize": "^6.6.5"
-  },
-  "devDependencies": {
-    "jest": "^27.2.0"
-  }
->>>>>>> 77825f4b7f52cdc8c392d9c7b92f598c491dd59f
 }
