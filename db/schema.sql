@@ -1,3 +1,2 @@
-DROP DATABASE IF EXISTS musicworld_db;
-
-CREATE DATABASE musicworld_db;
+DROP DATABASE IF EXISTS musical-world_db;
+CREATE DATABASE musical-world_db;
