@@ -1,0 +1,73 @@
+body{
+    background: rgb(218, 241, 250);
+    }
+    .main-container{
+       display: flex;
+    }
+    .right-column-container{
+        margin-right: 0px;
+    }
+    #piano-button, #guitar-button, #live-sound-button, #drum-percussion-button, #keyboard-button, #music-lesson-button{
+    display: inline-block;
+    width: 100%;
+    background: rgb(138, 190, 138);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: large;
+    }
+    #music-lesson-picture, #keyboard-picture{
+        height: 260px;
+    }
+    .store-main-title{
+        font-family: sans-serif;
+        color: whitesmoke;
+        font-weight: bolder;
+    }
+    .top-bar{
+        background: rgb(138, 190, 138);
+    }
+
+   .menuBar {
+       background-color: rgb(138, 190, 138);
+       color: white;
+       font-weight: bold;
+       font-size: large;
+   }
+   footer{
+       height: 70px;
+       background: rgb(138, 190, 138);
+       color: white;
+       padding: 10px;
+   }
+   #top-navbar{
+       background: rgb(138, 190, 138);     
+   }
+   #music-lesson-button:hover{
+    color: rgb(93, 93, 248);
+    cursor: pointer;  
+   }
+   #piano-button:hover{
+    color: rgb(93, 93, 248);
+    cursor: pointer;  
+   }
+   #guitar-button:hover{
+    color: rgb(93, 93, 248);
+    cursor: pointer;  
+   }
+   #live-sound-button:hover{
+    color: rgb(93, 93, 248);
+    cursor: pointer;  
+   }
+   #drum-percussion-button:hover{
+    color: rgb(93, 93, 248);
+    cursor: pointer;  
+   }
+   #keyboard-button:hover{
+    color: rgb(93, 93, 248);
+    cursor: pointer;  
+   }
+   #footer-location-button{
+       font-size: large;
+       font-weight: bold;
+   }
+  

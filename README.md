@@ -11,3 +11,5 @@
 - npm install express-session
 - npm install connect-session-sequelize
 - npm install -g nodemon
+
+this is updated on Sep 20
