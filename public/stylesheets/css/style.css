@@ -1,0 +1,12 @@
+body{
+background: rgb(218, 241, 250);
+}
+.main-container{
+   display: flex;
+}
+.right-column-container{
+    margin-right: 0px;
+}
+
+
+

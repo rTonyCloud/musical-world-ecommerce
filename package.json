@@ -2,7 +2,7 @@
   "name": "musical-world",
   "version": "1.0.0",
   "description": "- npm install express-handlebars\r - npm install express\r - npm install\r - npm install --save mysql2\r - npm install sequelize\r - npm install dotenv\r - npm install bcrypt\r - npm install express-session\r - npm install connect-session-sequelize\r - npm install -g nodemon",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
