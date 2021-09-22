@@ -38,6 +38,9 @@ body{
        background: rgb(138, 190, 138);
        color: white;
        padding: 10px;
+       position: fixed;
+        Width: 100%;
+        bottom: 0;
    }
    #top-navbar{
        background: rgb(138, 190, 138);     
