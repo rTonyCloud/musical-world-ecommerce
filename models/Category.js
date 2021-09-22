@@ -22,10 +22,10 @@ Category.init(
       type: DataTypes.STRING,
       allowNull: false
     },
-    // category_picture: {
-    //     type: DataTypes.JPEG,
-    //     allowNull: true
-    // },
+    category_picture: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
 
   },
   {

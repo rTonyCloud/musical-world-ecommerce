@@ -52,10 +52,10 @@ Product.init(
         key: "id"
       }
     },
-    // picture: {
-    //     type: DataTypes.JPEG,
-    //     allowNull: true
-    //   },
+    picture: {
+        type: DataTypes.STRING,
+        allowNull: true
+      },
 
   },
   {

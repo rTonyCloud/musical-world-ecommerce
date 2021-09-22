@@ -55,16 +55,16 @@ router.get('/:id', (req, res) => {
 // Post api by user (POST/api/users)
 router.post('/', (req, res) => {
     User.create({
-       firstname: req.body.firstname,
-       lastname: req.body.lastname,
+       
+       name: req.body.name,
        email: req.body.email,
-       username: req.body.username,
+       username: req.body.user_id,
        password: req.body.password,
     })
     .then(dbUserData => {
         req.session.save(() => {
-            req.session.firstname = dbUserData.firstname;
-            req.session.lastname = dbUserData.lastname;
+            
+            req.session.name = dbUserData.name;
             req.session.email = dbUserData.email;
             req.session.user_id = dbUserData.id;
             req.session.password = dbUserData.password
