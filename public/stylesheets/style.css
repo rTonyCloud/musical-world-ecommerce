@@ -10,7 +10,7 @@ body{
     #piano-button, #guitar-button, #live-sound-button, #drum-percussion-button, #keyboard-button, #music-lesson-button{
     display: inline-block;
     width: 100%;
-    background: rgb(138, 190, 138);
+    background: rgb(13 85 167);
     font-family: sans-serif;
     font-weight: bold;
     font-size: large;
@@ -24,27 +24,27 @@ body{
         font-weight: bolder;
     }
     .top-bar{
-        background: rgb(138, 190, 138);
+        background: rgb(13 85 167);
     }
 
    .menuBar {
-       background-color: rgb(138, 190, 138);
+       background-color: rgb(13 85 167);
        color: white;
        font-weight: bold;
        font-size: large;
    }
    footer{
        height: 70px;
-       background: rgb(138, 190, 138);
+       background: rgb(13 85 167);
        color: white;
        padding: 10px;
-       position: fixed;
-       Width: 100%;
-       bottom: 0;
-
+       position: relative;
+        Width: 100%;
+        bottom: 0;
    }
+   
    #top-navbar{
-       background: rgb(138, 190, 138);     
+       background: rgb(13 85 167);     
    }
    #music-lesson-button:hover{
     color: rgb(93, 93, 248);
@@ -75,3 +75,22 @@ body{
        font-weight: bold;
    }
   
+/* logo of the website */
+.store-main-title {
+    margin-left: 5%;
+}
+
+.header-text {
+    margin-left: 4%;
+    color: aliceblue;
+    font-weight: 900;
+}
+
+.menuBar:hover {
+    color:yellow;
+}
+
+/* footer copyright */
+.copyright {
+    text-align: center;
+}
