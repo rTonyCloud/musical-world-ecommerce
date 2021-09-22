@@ -1,15 +1,12 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Post, User, Comment } = require('../models');
+const { Category, User, Product} = require('../models');
 const withAuth = require('../utils/auth');
 
 // to get all dashboard data
 router.get('/', withAuth, (req, res) => {
-    Post.findAll({
-      where: {
-        // use the ID from the session
-        id: req.session.id
-      },
+    Category.findAll({
+      
       attributes: [
         'id',
         'category_name',
@@ -17,17 +14,14 @@ router.get('/', withAuth, (req, res) => {
       ],
       include: [
         {
-          model: product,
-          attributes: ['id', 'picture','product_name', 'price', 'stock', 'category_id', 'add_to_cart_option'],
+          model: Product,
+          attributes: ['id', 'picture','product_name', 'price', 'stock', 'category_id'],
           include: {
             model: User,
             attributes: ['id', 'name', 'email_id', 'telephone_no']
           }
         },
-        {
-          model: User,
-          attributes: ['id', 'name', 'email_id', 'telephone_no']
-        }
+        
       ]
     })
     .then(dbPostData => {

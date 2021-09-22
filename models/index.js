@@ -15,15 +15,15 @@ Category.hasMany(Product, {
   foreignKey: 'category_id'
 });
 
-// // Post belongTo User
-// Post.belongsTo(User, {
-//     foreignKey: 'user_id',
-// });
+// Product belongTo User
+Product.belongsTo(User, {
+    foreignKey: 'user_id',
+});
 
-// // User have many Posts
-// User.hasMany(Post, {
-//     foreignKey: 'user_id'
-// });
+// User have many Products
+User.hasMany( Product, {
+    foreignKey: 'user_id'
+});
 // Products belongToMany Tags (through ProductTag)
 Product.belongsToMany(Tag, { 
     through: Tag,

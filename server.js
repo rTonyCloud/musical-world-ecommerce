@@ -75,7 +75,7 @@ app.get('/dashboard', (req, res) =>{
 })
 
 // For Homepage
-app.get('/homepage/category1', (req, res) =>{
+app.get('/homepage', (req, res) =>{
     res.render("homepage", {title: 'Homepage'});
 })
 

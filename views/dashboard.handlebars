@@ -1,28 +1,29 @@
-<section>
-  <h2>Create New Post</h2>
-  <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
+
+<div class="grid-container fluid">
+    <div class="grid-x grid-margin-x">
+     
+      <div class="cell large-3  large-offset-3">
+
+        <img src="/images/piano-category.JPG" alt="Image" height="200" width="100%">        
+        <button class = "button medium" id = "piano-button">Piano Category</button>
+
+        <img src="/images/guitar-amp-category.JPG" alt="Image" height="200" width="100%">        
+        <button class = "button medium" id = "guitar-button">Guitar Category</button>
+
+        <img src="/images/live-sound-category.JPG" alt="Image" height="200" width="100%">        
+        <button class = "button medium" id = "live-sound-button">Live Sound</button>
+      </div>
+      
+      <div class="cell large-3" id = "right-column">
+
+        <img src="/images/drum-percussion-category.JPG" alt="Image" height="200" width="100%">      
+        <button class = "button medium" id = "drum-percussion-button">Drum and Percussion Category</button>
+
+        <img src="/images/keyboard-category.JPG" id = "keyboard-picture" alt="Image" height="200" width="100%">      
+        <button class = "button medium" id = "keyboard-button">Keyboard Category</button>
+
+        <img src="/images/music-lesson-category.JPG" id = "music-lesson-picture" alt="Image" height="200" width="100%">      
+        <button class = "button medium" id = "music-lesson-button">Music Lesson Category</button>
+      </div>
     </div>
-    <div>
-      <label for="post-url">Link</label>
-      <input id="post-url" name="post-url" />
-    </div>
-    <button type="submit" class="btn">Create</button>
-  </form>
-</section>
-{{#if posts.length}}
-<section>
-  <h2>Your Posts</h2>
-  <ol>
-    {{#each posts as |post|}}
-    <li>
-      {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
-    {{/each}}
-  </ol>
-</section>
-{{/if}}
-<script src="/javascript/add-post.js"></script>
+  </div>
