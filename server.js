@@ -46,8 +46,12 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Setting up handlebars as default tamplet engine
-app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
+app.engine('handlebars', exphbs({
+    defaultLayout : 'index',
+    layoutsDir: __dirname + '/views/layouts',
+    partialsDir: __dirname + '/views/partials',
+}));
 
 app.use(routes);
 
@@ -55,5 +59,44 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
   });
+
+  // Landing Page
+  app.get('/', (req, res) =>{
+      res.render("main");
+  })
+// For Cart
+  app.get('/cart', (req, res) =>{
+    res.render("cart", {title: 'Your Items in the Cart'});
+})
+
+// For dashboard
+app.get('/dashboard', (req, res) =>{
+    res.render("dashboard", {title: 'Dashboard'});
+})
+
+// For Homepage
+app.get('/homepage/category1', (req, res) =>{
+    res.render("homepage", {title: 'Homepage'});
+})
+
+// For login
+app.get('/login', (req, res) =>{
+    res.render("login", {title: 'Login'});
+})
+
+// For logout
+app.get('/logout', (req, res) =>{
+    res.render("logout", {title: 'Logout'});
+})
+
+// For signup
+app.get('/signup', (req, res) =>{
+    res.render("signup", {title: 'Signup'});
+})
+
+// For notfound
+app.get('*', (req, res) =>{
+    res.render("notfound", {message: 'Sorry, page Not found!'});
+})
 
 

@@ -20,7 +20,8 @@
     "express-handlebars": "^5.3.3",
     "express-session": "^1.17.2",
     "mysql2": "^2.3.0",
-    "sequelize": "^6.6.5"
+    "sequelize": "^6.6.5",
+    "strip": "^3.0.0"
   },
   "repository": {
     "type": "git",
