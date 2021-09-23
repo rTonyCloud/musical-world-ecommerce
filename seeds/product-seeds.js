@@ -5,7 +5,7 @@ const productData = [
   {
     picture: '../public/images/piano/piano-large.jpg',
     product_name: "Piano Large",
-    price: 514.99,
+    price: 1514.99,
     stock: 10,
     category_id: 1,
   },
