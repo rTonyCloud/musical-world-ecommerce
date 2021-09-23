@@ -1,5 +1,5 @@
 body{
-    background: rgb(218, 241, 250);
+    background: rgb(255, 255, 255);
     }
     .main-container{
        display: flex;
@@ -34,11 +34,11 @@ body{
        font-size: large;
    }
    footer{
-       height: 70px;
+       height: 100px;
        background: rgb(13 85 167);
        color: white;
        padding: 10px;
-       position: relative;
+       position:fixed;
         Width: 100%;
         bottom: 0;
    }
@@ -47,27 +47,27 @@ body{
        background: rgb(13 85 167);     
    }
    #music-lesson-button:hover{
-    color: rgb(93, 93, 248);
+    color: yellow;
     cursor: pointer;  
    }
    #piano-button:hover{
-    color: rgb(93, 93, 248);
+    color: yellow;
     cursor: pointer;  
    }
    #guitar-button:hover{
-    color: rgb(93, 93, 248);
+    color: yellow;
     cursor: pointer;  
    }
    #live-sound-button:hover{
-    color: rgb(93, 93, 248);
+    color: yellow;
     cursor: pointer;  
    }
    #drum-percussion-button:hover{
-    color: rgb(93, 93, 248);
+    color: yellow;
     cursor: pointer;  
    }
    #keyboard-button:hover{
-    color: rgb(93, 93, 248);
+    color: yellow;
     cursor: pointer;  
    }
    #footer-location-button{
@@ -81,7 +81,7 @@ body{
 }
 
 .header-text {
-    margin-left: 4%;
+    margin-left: 3%;
     color: aliceblue;
     font-weight: 900;
 }
@@ -93,4 +93,59 @@ body{
 /* footer copyright */
 .copyright {
     text-align: center;
+}
+#main-display{
+    margin-bottom: 100px;
+    margin-top: 5px;
+}
+#piano-1, #piano-2, #piano-3{
+    border: solid rgb(2, 2, 87) 5px;
+    padding: 10px;
+    background: rgb(255, 255, 255)  
+}
+#category-display{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+#piano-1-button{
+ 
+    background: rgb(13 85 167);
+    
+    margin-left: 9rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-bottom: 5px;
+}
+#piano-information{
+    color: rgb(0, 0, 0);
+}
+#item-name{
+    font-weight: bold;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#button {
+    
+        background: rgb(13 85 167);
+        color: honeydew;
+        border-radius: 1rem;
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: bold;
+        border: solid;
+        align-content: center;
+        margin-left: 11rem; 
+}
+
+#piano-1.cell.large-4, #piano-2.cell.large-4, #piano-3.cell.large-4   {
+    margin-top: 2rem;
+    border-radius: 1rem;
 }

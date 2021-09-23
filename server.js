@@ -20,9 +20,11 @@ const hbs = exphbs.create({helpers});
 const session = require('express-session');
 // declaring app to use express and the local host
 
+// strip payment gateway
+const stripe = require('stripe')('sk_test_51JcI4GIIfnjJMh6dv5FMyzh30rj0hFy545IAqlUibVch7fmGv4b1COPLO3QOY1jW67SpDrSvedIODao3m63JrnyN00IeNKZiwt');
 
 const app = express();
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 3002;
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
@@ -64,10 +66,6 @@ sequelize.sync({ force: false }).then(() => {
   app.get('/', (req, res) =>{
       res.render("main");
   })
-// For Cart
-  app.get('/cart', (req, res) =>{
-    res.render("cart", {title: 'Your Items in the Cart'});
-})
 
 // For dashboard
 app.get('/dashboard', (req, res) =>{
@@ -94,9 +92,48 @@ app.get('/signup', (req, res) =>{
     res.render("signup", {title: 'Signup'});
 })
 
+// For Piano Category Products 
+app.get('/piano', (req, res) =>{
+    res.render("piano", {title: 'All Piano Category Products:'});
+})
+
+// For Guitar Category Products
+app.get('/guitar', (req, res) =>{
+    res.render("guitar", {title: 'All Guitar and Amp Category Products:'});
+})
+
+// For Keyboard Category Products
+app.get('/keyboard', (req, res) =>{
+    res.render("keyboard", {title: 'All Keyboard Category Products:'});
+})
+
+// For Drum and Percussion Category Products
+app.get('/drum', (req, res) =>{
+    res.render("drum", {title: 'All Drum and Percussion Category Products:'});
+})
+// For Live Sound Category Products
+app.get('/sound', (req, res) =>{
+    res.render("sound", {title: 'All Live Sound Category Products:'});
+})
+
+// For Lesson Category Products
+app.get('/lesson', (req, res) =>{
+    res.render("lesson", {title: 'All Lesson Category Products:'});
+})
+
+// For All Category Product
+app.get('/all-products', (req, res) =>{
+    res.render("all-products", {title: 'All Categories Products'});
+})
+
+// For Single Product
+app.get('/product', (req, res) =>{
+    res.render("product", {title: 'Single Product'});
+})
 // For notfound
 app.get('*', (req, res) =>{
     res.render("notfound", {message: 'Sorry, page Not found!'});
 })
 
+ 
 
