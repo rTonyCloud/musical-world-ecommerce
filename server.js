@@ -20,8 +20,11 @@ const hbs = exphbs.create({helpers});
 const session = require('express-session');
 // declaring app to use express and the local host
 
+// strip payment gateway
+const stripe = require('stripe')('sk_test_51JcI4GIIfnjJMh6dv5FMyzh30rj0hFy545IAqlUibVch7fmGv4b1COPLO3QOY1jW67SpDrSvedIODao3m63JrnyN00IeNKZiwt');
+
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 

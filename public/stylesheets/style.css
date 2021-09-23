@@ -1,5 +1,5 @@
 body{
-    background: rgb(218, 241, 250);
+    background: rgb(255, 255, 255);
     }
     .main-container{
        display: flex;
@@ -101,16 +101,17 @@ body{
 #piano-1, #piano-2, #piano-3{
     border: solid rgb(2, 2, 87) 5px;
     padding: 10px;
-    background: rgb(48, 48, 141)  
+    background: rgb(255, 255, 255)  
 }
 #category-display{
     margin-top: 50px;
     margin-bottom: 100px;
 }
 #piano-1-button{
-    background: rgb(5, 202, 5);
+ 
+    background: rgb(13 85 167);
     
-    margin-left: 150px ;
+    margin-left: 9rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
@@ -120,8 +121,31 @@ body{
     margin-bottom: 5px;
 }
 #piano-information{
-    color: honeydew;
+    color: rgb(0, 0, 0);
 }
 #item-name{
     font-weight: bold;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#button {
+    
+        background: rgb(13 85 167);
+        color: honeydew;
+        border-radius: 1rem;
+        font-size: 2rem;
+        padding: 1rem;
+        font-weight: bold;
+        border: solid;
+        align-content: center;
+        margin-left: 11rem; 
+}
+
+#piano-1.cell.large-4, #piano-2.cell.large-4, #piano-3.cell.large-4   {
+    margin-top: 2rem;
+    border-radius: 1rem;
 }
