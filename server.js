@@ -9,6 +9,8 @@ const sequelize = require('./config/connection');
 // to get the path to stylesheet
 const path = require('path');
 
+const productData = require('./seeds/product-seeds');
+
 // import helpers
 const helpers = require('./utils/helpers');
 
@@ -18,11 +20,13 @@ const hbs = exphbs.create({helpers});
 
 // import express session
 const session = require('express-session');
-// declaring app to use express and the local host
 
 // strip payment gateway
 const stripe = require('stripe')('sk_test_51JcI4GIIfnjJMh6dv5FMyzh30rj0hFy545IAqlUibVch7fmGv4b1COPLO3QOY1jW67SpDrSvedIODao3m63JrnyN00IeNKZiwt');
 
+
+
+// declaring app to use express and the local host
 const app = express();
 const PORT = process.env.PORT || 3002;
 
@@ -54,6 +58,7 @@ app.engine('handlebars', exphbs({
     layoutsDir: __dirname + '/views/layouts',
     partialsDir: __dirname + '/views/partials',
 }));
+
 
 app.use(routes);
 
@@ -126,14 +131,25 @@ app.get('/all-products', (req, res) =>{
     res.render("all-products", {title: 'All Categories Products'});
 })
 
+
+//=============================================================================================
+
 // For Single Product
 app.get('/product', (req, res) =>{
-    res.render("product", {title: 'Single Product'});
+    res.render("single_product", {title: 'Single Product'});
 })
+
+// For Multiple Product
+app.get('/products', (req, res) =>{
+    console.log("this is the product data",productData);
+    res.render("products", productData);
+})
+// For Category
+app.get('/category', (req, res) =>{
+    res.render("category", {title: 'Products as per category'});
+})
+
 // For notfound
 app.get('*', (req, res) =>{
     res.render("notfound", {message: 'Sorry, page Not found!'});
 })
-
- 
-
