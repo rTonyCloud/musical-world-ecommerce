@@ -1,19 +1,21 @@
 <div class="grid-container fluid">
       <div class="grid-x grid-margin-x">
-        <div class="cell large-3 large-offset-4 ">
-          <h2 class="title pb-4">login:</h2>
+        <div class="cell large-3 large-offset-4 " id = "login-page">
+          <h1 class="title pb-4" id="login-title">Login:</h1>
           <form class="login-form">
-            <div>
-              <label for="email-login">email:</label>
-              <input type="text" id="email-login" />
+            <div >
+              <label id="email-heading"><h5>Email:</h5></label>
+              <input type="Email" placeholder="Email" id = "email-login">
             </div>
-            <div>
-              <label for="password-login">password:</label>
-              <input type="password" id="password-login" />
+            <div >
+              <label id="password-heading"><h5>Password:</h5></label>
+              <input type="password" placeholder="Password" id = "password-login">
             </div>
+            
+            
             <div>
-              <button type="submit" class="button is-primary">login</button>
-              <a href="/signup"><button type="button" class="button is-danger">Signup</button></a>
+              <button type="submit" class="success button" id = "login-btn"><h5>Login</h5></button>
+              <a href="/signup"><button type="button" class="alert button" id="signup-btn"><h5>Signup</h5></button></a>
             </div>
           </form>
           </div>
