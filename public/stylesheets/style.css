@@ -23,6 +23,21 @@ body{
         color: whitesmoke;
         font-weight: bolder;
     }
+
+    /* nav styling */
+
+.header-text {
+    margin-left: 3%;
+    color: aliceblue;
+    font-weight: 900;
+
+}   
+
+.menuBar:hover {
+    color:yellow;
+
+}
+
     .top-bar{
         background: rgb(13 85 167);
     }
@@ -31,8 +46,8 @@ body{
        background-color: rgb(13 85 167);
        color: white;
        font-weight: bold;
-       font-size: 25px;
-   }
+       font-size: 1rem;
+   }    
    #footer-location-button{
        color: gold;
    }
@@ -83,15 +98,6 @@ body{
     margin-left: 5%;
 }
 
-.header-text {
-    margin-left: 3%;
-    color: aliceblue;
-    font-weight: 900;
-}
-
-.menuBar:hover {
-    color:yellow;
-}
 
 /* footer copyright */
 .copyright {
@@ -392,7 +398,7 @@ body{
 
 #signup-page {
     background: rgb(13 85 167);
-    margin-top: 180px;
+    margin-top: 50px;
     padding:30px;
     padding-left: 100px;
     padding-right: 100px;
