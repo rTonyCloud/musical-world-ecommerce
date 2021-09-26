@@ -13,7 +13,7 @@ body{
     background: rgb(13 85 167);
     font-family: sans-serif;
     font-weight: bold;
-    font-size: large;
+    font-size: 20px;
     }
     #music-lesson-picture, #keyboard-picture{
         height: 260px;
@@ -31,7 +31,10 @@ body{
        background-color: rgb(13 85 167);
        color: white;
        font-weight: bold;
-       font-size: large;
+       font-size: 25px;
+   }
+   #footer-location-button{
+       color: gold;
    }
    footer{
        height: 100px;
@@ -97,10 +100,9 @@ body{
 #main-display{
     margin-bottom: 100px;
     margin-top: 5px;
-    background: rgb(13 85 167);
+    
 }
 #piano-1, #piano-2, #piano-3{
-    border: solid rgb(2, 2, 87) 5px;
     padding: 10px;
     background: rgb(255, 255, 255)  
 }
@@ -108,10 +110,8 @@ body{
     margin-top: 50px;
     margin-bottom: 100px;
 }
-#piano-1-button{
- 
-    background: rgb(13 85 167);
-    
+#piano-1-button{ 
+    background: rgb(13 85 167);    
     margin-left: 9rem; 
     border-radius: 10px;
     font-size:x-large;
@@ -119,31 +119,234 @@ body{
     color: honeydew;
     font-weight: bold;
     border: solid;
-    margin-bottom: 5px;
+    margin-top: 100px;
+    cursor: pointer;   
 }
+#piano-2-button{
+    background: rgb(13 85 167);
+    margin-left: 15rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 220px;
+    cursor: pointer;   
+}
+#piano-3-button{
+    background: rgb(13 85 167);
+    margin-left: 9rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 0px;
+    cursor: pointer;   
+}
+#guitar-1-button{ 
+    background: rgb(13 85 167);    
+    margin-left: 9rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 0px;
+    cursor: pointer;   
+}
+#guitar-2-button{
+    background: rgb(13 85 167);
+    margin-left: 15rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 305px;
+    cursor: pointer;   
+}
+#guitar-3-button{
+    background: rgb(13 85 167);
+    margin-left: 9rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 50px;
+    cursor: pointer;   
+}
+#keyboard-1-button{ 
+    background: rgb(13 85 167);    
+    margin-left: 15rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 20px;
+    cursor: pointer;   
+}
+#keyboard-2-button{
+    background: rgb(13 85 167);
+    margin-left: 15rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 20px;
+    cursor: pointer;   
+}
+#keyboard-3-button{
+    background: rgb(13 85 167);
+    margin-left: 9rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 0px;
+    cursor: pointer;   
+}
+#drum-1-button{ 
+    background: rgb(13 85 167);    
+    margin-left: 9rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 170px;
+    cursor: pointer;   
+}
+#drum-2-button{
+    background: rgb(13 85 167);
+    margin-left: 15rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 130px;
+    cursor: pointer;   
+}
+#drum-3-button{
+    background: rgb(13 85 167);
+    margin-left: 9rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 0px;
+    cursor: pointer;   
+}
+#sound-1-button{ 
+    background: rgb(13 85 167);    
+    margin-left: 9rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 0px;
+    cursor: pointer;   
+}
+#sound-2-button{
+    background: rgb(13 85 167);
+    margin-left: 15rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 30px;
+    cursor: pointer;   
+}
+#sound-3-button{
+    background: rgb(13 85 167);
+    margin-left: 9rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 0px;
+    cursor: pointer;   
+}
+#lesson-1-button{ 
+    background: rgb(13 85 167);    
+    margin-left: 9rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 0px;
+    cursor: pointer;   
+}
+#lesson-2-button{
+    background: rgb(13 85 167);
+    margin-left: 15rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 175px;
+    cursor: pointer;   
+}
+#lesson-3-button{
+    background: rgb(13 85 167);
+    margin-left: 12rem; 
+    border-radius: 10px;
+    font-size:x-large;
+    padding: 10px;
+    color: honeydew;
+    font-weight: bold;
+    border: solid;
+    margin-top: 130px;
+    cursor: pointer;   
+}
+
 #piano-information{
     color: rgb(0, 0, 0);
 }
 #item-name{
     font-weight: bold;
 }
-
 .title {
     text-align: center;
     font-size: 2rem;
 }
-
-#button {
-    
-        background: rgb(13 85 167);
-        color: honeydew;
-        border-radius: 1rem;
-        font-size: 2rem;
-        padding: 1rem;
-        font-weight: bold;
-        border: solid;
-        align-content: center;
-        margin-left: 11rem; 
+#button {   
+    background: rgb(13 85 167);
+    color: honeydew;
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+    border: solid;
+    align-content: center;
+    margin-left: 11rem; 
 }
 
 #piano-1.cell.large-4, #piano-2.cell.large-4, #piano-3.cell.large-4   {
@@ -196,12 +399,11 @@ body{
     border-radius: 40px;
 }
 
-#product-description{
+#product-description, #category-description, #user-description{
     padding: 50px;
     font-family: sans-serif;
     color: rgb(9, 9, 121);
     
-
 }
 
 #picture-list{
@@ -209,4 +411,51 @@ body{
 }
 #sku-id, #product-name-id, #price-id, #stock-id, #category-list-id{
     font-weight: bold;
+}
+#information-btn{
+    border-radius: 20px;
+    border: solid rgb(2, 2, 87) 5px;
+    padding: 10px;
+    background: rgb(255, 255, 255)  
+}
+#category-header{
+    font-family: sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+#category_id, #user-id{
+    margin-top: 150px;
+    font-weight: bold;
+}
+
+#category-name-id{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#home-main-pic{
+    margin-bottom: 0px;
+}
+
+#advice-button{
+    display: inline-block;
+    width: 100%;
+    background: rgb(13 85 167);
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 25px;
+    padding-bottom: 25px; 
+    color: gold; 
+}
+#advice-button-right{
+    display: inline-block;
+    width: 100%;
+    background: rgb(13 85 167);
+    font-family:cursive;
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: gold; 
 }

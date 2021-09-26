@@ -1,0 +1,19 @@
+<div class="grid-container fluid" id = "product-display">
+   <div class="grid-x grid-margin-x">
+        <div class="cell large-4 large-offset-4">   
+            <div class="row">
+                <div class="media-object">
+                    <div class="media-object-section" id = "category-description">
+                        <div >
+                            {{#each this}}                                                                  
+                                <h2 id = "category_id">Category Id: {{category_id}}</h2> 
+                                <h3 id = "category-name-id">Category Name: {{category_name}}</h3>
+                                <p id = "category-picture"><img src={{category_picture}} alt="category pictures" width="700" height="700"></p>                                                                    
+                            {{/each}}
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>   
+    </div>
+</div>  
