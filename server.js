@@ -10,6 +10,8 @@ const sequelize = require('./config/connection');
 const path = require('path');
 
 const productData = require('./seeds/product-seeds');
+const categoryData = require('./seeds/category-seeds');
+const userData = require('./seeds/user-seeds');
 
 // import helpers
 const helpers = require('./utils/helpers');
@@ -135,18 +137,19 @@ app.get('/all-products', (req, res) =>{
 //=============================================================================================
 
 // For Single Product
-app.get('/product', (req, res) =>{
-    res.render("single_product", {title: 'Single Product'});
+app.get('/user', (req, res) =>{
+    res.render("user", userData);
 })
 
 // For Multiple Product
 app.get('/products', (req, res) =>{
-    console.log("this is the product data",productData);
+    console.log("this is the product data", productData);
     res.render("products", productData);
 })
 // For Category
 app.get('/category', (req, res) =>{
-    res.render("category", {title: 'Products as per category'});
+    
+    res.render("category", categoryData);
 })
 
 // For notfound

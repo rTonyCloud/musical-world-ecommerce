@@ -1,0 +1,30 @@
+<div class="grid-container fluid" id = "product-display">
+   <div class="grid-x grid-margin-x">
+        <div class="cell large-4 large-offset-4">   
+            <div class="row">
+                <div class="media-object">
+                    <div class="media-object-section" id = "user-description">
+                        <div >
+                            {{#each this}}                                                                                                  
+                                <h2 id = "user-id">User-id: {{id}}</h2> 
+                                <h3 id = "user-name">Name: {{name}}</h3>
+                                <h3 id = "email-id">Email Id: {{email_id}}</h3>
+                                <h3 id = "telephone-no">Telephone Number: {{telephone_no}}</h3>
+                                <h3 id = "email-full">Email: {{email}}</h3> 
+                                <h3 id = "password">Password: {{password}}</h3>                                        
+                            {{/each}}
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>   
+    </div>
+</div>                          
+    
+
+    id: 101,
+        name: "Mike Tyson",
+        email_id: "mike_ty",
+        telephone_no: "9546676543",
+        email: "mike_ty@gmail.com",
+        password: "password"

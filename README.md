@@ -21,24 +21,24 @@
 
 ## App Screenshots
 - Picture of the Home Page of the Application.
-![Home page of the application](./public/images/application-output/Homepage-display.JPG)
+![Home page of the application](./public/images/application-output/Homepage-display.png)
 
 - Picture of the Dashboard
 ![Picture of dashboard](./public/images/application-output/Dashboard-display.JPG)
 
 - To login to Application
 
-![Login functionality](./public/images/application-output/Login-page.JPG)
+![Login functionality](./public/images/application-output/Login-page.png)
 
 - Signup Option of the Application.
-![Signup option](./public/images/application-output/Signup-page.JPG)
+![Signup option](./public/images/application-output/Signup-page.png)
 
 - To Find Our Locations
 ![Edit Post](./public/images/application-output/Location-page.JPG)
 
 - View with Insomnia
 
-![In API](./public/images/application-output/Insomnia-API-View.JPG)
+![In API](./public/images/application-output/Insomnia-API-View.png)
 
 
 ## Overview Links

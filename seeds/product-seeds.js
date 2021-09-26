@@ -67,7 +67,7 @@ const productData = [
     category_id: 3,
   },
   {
-    sku: 200121,
+    sku: 300121,
     picture: '/images/live-sound/yamaha-mg16xu.JPG',
     product_name: "Yamaha MG16XU 16-Channel Mixer",
     price: 549.99,
