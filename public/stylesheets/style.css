@@ -120,14 +120,14 @@ body{
     
 }
 #piano-1, #piano-2, #piano-3{
-    padding: 66rem;
+    padding: 2 2 2 0rem;
     background: var(--text-white); 
 }
 #category-display{
     margin-top: 3rem;
     margin-bottom: 6.25rem;
 }
-#piano-1-button{ 
+#piano-1-button { 
     background: var(--primary-blue);   
     margin-left: 9rem; 
     border-radius: .5rem;
@@ -154,9 +154,9 @@ body{
 #piano-3-button{
     background: var(--primary-blue);
     margin-left: 9rem; 
-    border-radius: 66rem;
+    border-radius: 61rem;
     font-size:x-large;
-    padding:66rem;
+    padding:1rem;
     color: var(--text-white);
     font-weight: bold;
     border: solid;
