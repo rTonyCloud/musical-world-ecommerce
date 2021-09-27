@@ -127,10 +127,10 @@ body{
     margin-top: 3rem;
     margin-bottom: 6.25rem;
 }
-#piano-1-button { 
+#piano-1-button, #piano-2-button, #piano-3-button{ 
     background: var(--primary-blue);   
     margin-left: 9rem; 
-    border-radius: .5rem;
+    border-radius: 2rem;
     font-size:x-large;
     padding: 1rem;
     color: var(--text-white);;
@@ -139,12 +139,12 @@ body{
     margin-top: 6.25rem;
     cursor: pointer;   
 }
-#piano-2-button{
+#piano-2-button {
     background: var(--primary-blue);
     margin-left: 15rem; 
-    border-radius: .5rem;
+    border-radius: 2rem;
     font-size:x-large;
-    padding: .5rem;
+    padding: 1rem;
     color: var(--text-white);
     font-weight: bold;
     border: solid;
