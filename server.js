@@ -9,6 +9,10 @@ const sequelize = require('./config/connection');
 // to get the path to stylesheet
 const path = require('path');
 
+const productData = require('./seeds/product-seeds');
+const categoryData = require('./seeds/category-seeds');
+const userData = require('./seeds/user-seeds');
+
 // import helpers
 const helpers = require('./utils/helpers');
 
@@ -18,11 +22,13 @@ const hbs = exphbs.create({helpers});
 
 // import express session
 const session = require('express-session');
-// declaring app to use express and the local host
 
 // strip payment gateway
 const stripe = require('stripe')('sk_test_51JcI4GIIfnjJMh6dv5FMyzh30rj0hFy545IAqlUibVch7fmGv4b1COPLO3QOY1jW67SpDrSvedIODao3m63JrnyN00IeNKZiwt');
 
+
+
+// declaring app to use express and the local host
 const app = express();
 const PORT = process.env.PORT || 3002;
 
@@ -55,6 +61,7 @@ app.engine('handlebars', exphbs({
     partialsDir: __dirname + '/views/partials',
 }));
 
+
 app.use(routes);
 
 // sync sequelize models to the database, then turn on the server
@@ -64,7 +71,7 @@ sequelize.sync({ force: false }).then(() => {
 
   // Landing Page
   app.get('/', (req, res) =>{
-      res.render("main");
+      res.render("homepage");
   })
 
 // For dashboard
@@ -126,14 +133,26 @@ app.get('/all-products', (req, res) =>{
     res.render("all-products", {title: 'All Categories Products'});
 })
 
+
+//=============================================================================================
+
 // For Single Product
-app.get('/product', (req, res) =>{
-    res.render("product", {title: 'Single Product'});
+app.get('/user', (req, res) =>{
+    res.render("user", userData);
 })
+
+// For Multiple Product
+app.get('/products', (req, res) =>{
+    console.log("this is the product data", productData);
+    res.render("products", productData);
+})
+// For Category
+app.get('/category', (req, res) =>{
+    
+    res.render("category", categoryData);
+})
+
 // For notfound
 app.get('*', (req, res) =>{
     res.render("notfound", {message: 'Sorry, page Not found!'});
 })
-
- 
-

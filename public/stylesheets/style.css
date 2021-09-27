@@ -1,11 +1,22 @@
+:root {
+    --primary-blue: rgb(13 85 167);
+    --background-text: rgb(9, 9, 121); ;
+    --button-hover: rgb(255, 255, 0);
+    --text-white: rgb(255, 255, 255);
+    --gold-text: rgb(255, 215, 0);
+    --black: rgb(0, 0, 0);
+}
+
+
+
 body{
-    background: rgb(255, 255, 255);
+    background: var(--text-white);
     }
     .main-container{
        display: flex;
     }
     .right-column-container{
-        margin-right: 0px;
+        margin-right: 0rem;
     }
     #piano-button, #guitar-button, #live-sound-button, #drum-percussion-button, #keyboard-button, #music-lesson-button{
     display: inline-block;
@@ -13,61 +24,79 @@ body{
     background: rgb(13 85 167);
     font-family: sans-serif;
     font-weight: bold;
-    font-size: large;
+    font-size: 1.33rem;
     }
     #music-lesson-picture, #keyboard-picture{
-        height: 260px;
+        height: 24rem;
     }
     .store-main-title{
         font-family: sans-serif;
-        color: whitesmoke;
+        color: var(--text-white);
         font-weight: bolder;
     }
+
+    /* nav styling */
+
+.header-text {
+    margin-left: 3%;
+    color: var(--text-white);
+    font-weight: 900;
+
+}   
+
+.menuBar:hover {
+    color: var(--button-hover);
+
+}
+
     .top-bar{
-        background: rgb(13 85 167);
+        background: var(--primary-blue);
     }
 
    .menuBar {
-       background-color: rgb(13 85 167);
-       color: white;
+       background-color: var(--primary-blue);
+       color: var(--text-white);
        font-weight: bold;
-       font-size: large;
+       font-size: 1rem;
+   }    
+   #footer-location-button{
+       color: var(--gold-text);
    }
    footer{
-       height: 100px;
-       background: rgb(13 85 167);
-       color: white;
-       padding: 10px;
-       position:fixed;
+       height: 6.25rem;
+       background: var(--primary-blue);
+       color: var(--text-white);
+       padding: .62rem;
+       position: fixed;
         Width: 100%;
         bottom: 0;
    }
    
    #top-navbar{
-       background: rgb(13 85 167);     
+       background: var(--primary-blue);    
    }
    #music-lesson-button:hover{
-    color: yellow;
+    color: var(--button-hover);
     cursor: pointer;  
    }
    #piano-button:hover{
-    color: yellow;
+    color:  var(--button-hover);
     cursor: pointer;  
    }
    #guitar-button:hover{
-    color: yellow;
+    color:  var(--button-hover);
     cursor: pointer;  
    }
    #live-sound-button:hover{
-    color: yellow;
+    color:  var(--button-hover);
     cursor: pointer;  
    }
    #drum-percussion-button:hover{
-    color: yellow;
+    color:   var(--button-hover);
     cursor: pointer;  
    }
    #keyboard-button:hover{
-    color: yellow;
+    color: var(--button-hover);
     cursor: pointer;  
    }
    #footer-location-button{
@@ -80,72 +109,371 @@ body{
     margin-left: 5%;
 }
 
-.header-text {
-    margin-left: 3%;
-    color: aliceblue;
-    font-weight: 900;
-}
-
-.menuBar:hover {
-    color:yellow;
-}
 
 /* footer copyright */
 .copyright {
     text-align: center;
 }
 #main-display{
-    margin-bottom: 100px;
-    margin-top: 5px;
+    margin-bottom: 6.25rem;
+    margin-top: .33rem;
+    
 }
 #piano-1, #piano-2, #piano-3{
-    border: solid rgb(2, 2, 87) 5px;
-    padding: 10px;
-    background: rgb(255, 255, 255)  
+    padding: 2 2 2 0rem;
+    background: var(--text-white); 
 }
 #category-display{
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 3rem;
+    margin-bottom: 6.25rem;
 }
-#piano-1-button{
- 
-    background: rgb(13 85 167);
-    
+#piano-1-button, #piano-2-button, #piano-3-button{ 
+    background: var(--primary-blue);   
     margin-left: 9rem; 
-    border-radius: 10px;
+    border-radius: 2rem;
     font-size:x-large;
-    padding: 10px;
-    color: honeydew;
+    padding: 1rem;
+    color: var(--text-white);;
     font-weight: bold;
     border: solid;
-    margin-bottom: 5px;
+    margin-top: 6.25rem;
+    cursor: pointer;   
 }
+#piano-2-button {
+    background: var(--primary-blue);
+    margin-left: 15rem; 
+    border-radius: 2rem;
+    font-size:x-large;
+    padding: 1rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 13.75rem;
+    cursor: pointer;   
+}
+#piano-3-button{
+    background: var(--primary-blue);
+    margin-left: 9rem; 
+    border-radius: 61rem;
+    font-size:x-large;
+    padding:1rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 0rem;
+    cursor: pointer;   
+}
+#guitar-1-button{ 
+    background: var(--primary-blue);  
+    margin-left: 9rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 0rem;
+    cursor: pointer;   
+}
+#guitar-2-button{
+    background: var(--primary-blue);
+    margin-left: 15rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 19rem;
+    cursor: pointer;   
+}
+#guitar-3-button{
+    background: var(--primary-blue);
+    margin-left: 9rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 3.125rem;
+    cursor: pointer;   
+}
+#keyboard-1-button{ 
+    background: var(--primary-blue);
+    margin-left: 15rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 1.33rem;
+    cursor: pointer;   
+}
+#keyboard-2-button{
+    background: var(--primary-blue);
+    margin-left: 15rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 1.33rem;
+    cursor: pointer;   
+}
+#keyboard-3-button{
+    background: var(--primary-blue);
+    margin-left: 9rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 0rem;
+    cursor: pointer;   
+}
+#drum-1-button{ 
+    background: var(--primary-blue);    
+    margin-left: 9rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 10.62rem;
+    cursor: pointer;   
+}
+#drum-2-button{
+    background: var(--primary-blue);
+    margin-left: 15rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 8.125rem;
+    cursor: pointer;   
+}
+#drum-3-button{
+    background: var(--primary-blue);
+    margin-left: 9rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 0rem;
+    cursor: pointer;   
+}
+#sound-1-button{ 
+    background: var(--primary-blue);  
+    margin-left: 9rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 0rem;
+    cursor: pointer;   
+}
+#sound-2-button{
+    background: var(--primary-blue);
+    margin-left: 15rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 2rem;
+    cursor: pointer;   
+}
+#sound-3-button{
+    background: var(--primary-blue);
+    margin-left: 9rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 0rem;
+    cursor: pointer;   
+}
+#lesson-1-button{ 
+    background: var(--primary-blue);   
+    margin-left: 9rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 0rem;
+    cursor: pointer;   
+}
+#lesson-2-button{
+    background: var(--primary-blue);
+    margin-left: 15rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 175px;
+    cursor: pointer;   
+}
+#lesson-3-button{
+    background: var(--primary-blue);
+    margin-left: 12rem; 
+    border-radius: .66rem;
+    font-size:x-large;
+    padding: .66rem;
+    color: var(--text-white);
+    font-weight: bold;
+    border: solid;
+    margin-top: 130px;
+    cursor: pointer;   
+}
+
 #piano-information{
-    color: rgb(0, 0, 0);
+    color: var(--black);
 }
 #item-name{
     font-weight: bold;
 }
-
 .title {
     text-align: center;
     font-size: 2rem;
 }
-
-#button {
-    
-        background: rgb(13 85 167);
-        color: honeydew;
-        border-radius: 1rem;
-        font-size: 2rem;
-        padding: 1rem;
-        font-weight: bold;
-        border: solid;
-        align-content: center;
-        margin-left: 11rem; 
+#button {   
+    background: var(--primary-blue);
+    color: var(--text-white);
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+    border: solid;
+    align-content: center;
+    margin-left: 11rem; 
 }
 
 #piano-1.cell.large-4, #piano-2.cell.large-4, #piano-3.cell.large-4   {
     margin-top: 2rem;
     border-radius: 1rem;
+}
+
+#login-title, #signup-title{
+    font-family: sans-serif;
+    color: var(--text-white);
+    font-weight: bold;   
+}
+#login-page {
+    background: var(--primary-blue);
+    margin-top: 5rem;
+    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 2rem;
+}
+
+#email-heading, #password-heading, #name-heading, #username-heading {
+    font-family: sans-serif;
+    color: var(--text-white);
+    font-weight: bold;
+}
+#email-login, #password-login, #name-signup, #email-signup, #user_id-signup, #password-signup{
+    padding: .33rem;
+    border-radius: .33rem;
+}
+
+#login-btn, #signup-btn{
+    padding: .33rem;
+    padding-left: 2rem ;
+    padding-right: 2rem;
+    border-radius: .5rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: var(--text-white);
+    margin-top: 1.25rem;
+    padding-top: .75rem;
+}
+
+#signup-page {
+    background: rgb(13 85 167);
+    margin-top: 3rem;
+    padding: 2rem;
+    padding-left: 6.25rem;
+    padding-right: 6.25rem;
+    border-radius: 3rem;
+}
+
+#product-description, #category-description, #user-description{
+    padding: 3rem;
+    font-family: sans-serif;
+    color: var(--background-text);
+    
+}
+
+#picture-list{
+    margin-top: 150px;
+}
+#sku-id, #product-name-id, #price-id, #stock-id, #category-list-id{
+    font-weight: bold;
+}
+#information-btn{
+    border-radius: 1rem;
+    border: solid var(--background-text) .3rem;
+    padding: .5rem;
+    background: var(--text-white);
+}
+#category-header{
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+#category_id, #user-id{
+    margin-top: 9.375rem;
+    font-weight: bold;
+}
+
+#category-name-id{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#home-main-pic{
+    margin-bottom: 0rem;
+}
+
+#advice-button{
+    display: inline-block;
+    width: 100%;
+    background: var(--primary-blue);
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 1.5rem; 
+    padding-bottom: 1.5rem; 
+    color: var(--gold-text); 
+}
+
+#advice-button-right{
+    display: inline-block;
+    width: 100%;
+    background: var(--primary-blue);
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    color: var(--gold-text); 
 }
