@@ -7,11 +7,11 @@ router.get('/', (req, res) => {
   // find all categories
   // be sure to include its associated Products
   Category.findAll({
-    attributes: ['id', 'category_name', 'category_picture'],
+    attributes: ['category_id', 'category_name', 'category_picture'],
     include: [
       {
         model: Product,
-        attributes: ['id', 'picture','product_name', 'price', 'stock', 'category_id', 'add_to_cart_option']
+        attributes: ['sku', 'picture','product_name', 'price', 'stock', 'category_id']
       }
     ]
   })
@@ -29,11 +29,11 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    attributes: ['id', 'category_name', 'category_picture'],
+    attributes: ['category_id', 'category_name', 'category_picture'],
     include: [
       {
         model: Product,
-        attributes: ['id', 'picture','product_name', 'price', 'stock', 'category_id', 'add_to_cart_option']
+        attributes: ['sku', 'picture','product_name', 'price', 'stock', 'category_id']
       }
     ]
   })

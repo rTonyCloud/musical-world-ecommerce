@@ -8,11 +8,11 @@ router.get('/', (req, res) => {
   // find all products
   // be sure to include its associated Category and Tag data
 Product.findAll({
-    attributes: ['id', 'picture','product_name', 'price', 'stock', 'category_id', 'add_to_cart_option'],
+    attributes: ['sku', 'picture','product_name', 'price', 'stock', 'category_id'],
     include : [
       {
         model: Category,
-        attributes: ['id', 'category_name', 'category_picture']
+        attributes: ['category_id', 'category_name', 'category_picture']
       },
     
     {
@@ -37,11 +37,11 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    attributes: ['id', 'picture','product_name', 'price', 'stock', 'category_id', 'add_to_cart_option'],
+    attributes: ['sku', 'picture','product_name', 'price', 'stock', 'category_id'],
   include : [
     {
       model: Category,
-      attributes: ['id', 'category_name', 'category_picture']
+      attributes: ['category_id', 'category_name', 'category_picture']
     },
   ]
   })
@@ -61,14 +61,7 @@ router.get('/:id', (req, res) => {
 
 // create new product
 router.post('/', (req, res) => {
-  /* req.body should look like this...
-    {
-      product_name: "Basketball",
-      price: 200.00,
-      stock: 3,
-      tagIds: [1, 2, 3, 4]
-    }
-  */
+  
 Product.create(req.body)
   .then((product) => {
   // if there's product tags, we need to create pairings to bulk create in the ProductTag model
