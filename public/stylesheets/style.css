@@ -31,7 +31,7 @@ body{
        background-color: rgb(13 85 167);
        color: white;
        font-weight: bold;
-       font-size: 1rem;
+       font-size: 15px ;
    }
    #footer-location-button{
        color: gold;
@@ -84,9 +84,10 @@ body{
 }
 
 .header-text {
-    margin-left: 3%;
+    margin-left: 2%;
     color: aliceblue;
     font-weight: 900;
+    font-size: 38px;
 }
 
 .menuBar:hover {
@@ -112,26 +113,26 @@ body{
 }
 #piano-1-button{ 
     background: rgb(13 85 167);    
-    margin-left: 9rem; 
+    margin-left: 7rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
     color: honeydew;
     font-weight: bold;
     border: solid;
-    margin-top: 100px;
+    margin-top: 85px;
     cursor: pointer;   
 }
 #piano-2-button{
     background: rgb(13 85 167);
-    margin-left: 15rem; 
+    margin-left: 8rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
     color: honeydew;
     font-weight: bold;
     border: solid;
-    margin-top: 220px;
+    margin-top: 145px;
     cursor: pointer;   
 }
 #piano-3-button{
@@ -148,7 +149,7 @@ body{
 }
 #guitar-1-button{ 
     background: rgb(13 85 167);    
-    margin-left: 9rem; 
+    margin-left: 5rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
@@ -160,31 +161,31 @@ body{
 }
 #guitar-2-button{
     background: rgb(13 85 167);
-    margin-left: 15rem; 
-    border-radius: 10px;
+    margin-left: 10rem; 
+    border-radius: 8px;
     font-size:x-large;
     padding: 10px;
     color: honeydew;
     font-weight: bold;
     border: solid;
-    margin-top: 305px;
+    margin-top: 205px;
     cursor: pointer;   
 }
 #guitar-3-button{
     background: rgb(13 85 167);
-    margin-left: 9rem; 
+    margin-left: 7rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
     color: honeydew;
     font-weight: bold;
     border: solid;
-    margin-top: 50px;
+    margin-top: 30px;
     cursor: pointer;   
 }
 #keyboard-1-button{ 
     background: rgb(13 85 167);    
-    margin-left: 15rem; 
+    margin-left: 7rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
@@ -196,7 +197,7 @@ body{
 }
 #keyboard-2-button{
     background: rgb(13 85 167);
-    margin-left: 15rem; 
+    margin-left: 7rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
@@ -208,7 +209,7 @@ body{
 }
 #keyboard-3-button{
     background: rgb(13 85 167);
-    margin-left: 9rem; 
+    margin-left: 11rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
@@ -220,31 +221,31 @@ body{
 }
 #drum-1-button{ 
     background: rgb(13 85 167);    
-    margin-left: 9rem; 
+    margin-left: 8rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
     color: honeydew;
     font-weight: bold;
     border: solid;
-    margin-top: 170px;
+    margin-top: 140px;
     cursor: pointer;   
 }
 #drum-2-button{
     background: rgb(13 85 167);
-    margin-left: 15rem; 
+    margin-left: 9rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
     color: honeydew;
     font-weight: bold;
     border: solid;
-    margin-top: 130px;
+    margin-top: 110px;
     cursor: pointer;   
 }
 #drum-3-button{
     background: rgb(13 85 167);
-    margin-left: 9rem; 
+    margin-left: 8rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
@@ -256,7 +257,7 @@ body{
 }
 #sound-1-button{ 
     background: rgb(13 85 167);    
-    margin-left: 9rem; 
+    margin-left: 8rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
@@ -268,19 +269,19 @@ body{
 }
 #sound-2-button{
     background: rgb(13 85 167);
-    margin-left: 15rem; 
+    margin-left: 8rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
     color: honeydew;
     font-weight: bold;
     border: solid;
-    margin-top: 30px;
+    margin-top: 20px;
     cursor: pointer;   
 }
 #sound-3-button{
     background: rgb(13 85 167);
-    margin-left: 9rem; 
+    margin-left: 7rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
@@ -292,7 +293,7 @@ body{
 }
 #lesson-1-button{ 
     background: rgb(13 85 167);    
-    margin-left: 9rem; 
+    margin-left: 7rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
@@ -304,26 +305,26 @@ body{
 }
 #lesson-2-button{
     background: rgb(13 85 167);
-    margin-left: 15rem; 
+    margin-left: 7rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
     color: honeydew;
     font-weight: bold;
     border: solid;
-    margin-top: 175px;
+    margin-top: 110px;
     cursor: pointer;   
 }
 #lesson-3-button{
     background: rgb(13 85 167);
-    margin-left: 12rem; 
+    margin-left: 6rem; 
     border-radius: 10px;
     font-size:x-large;
     padding: 10px;
     color: honeydew;
     font-weight: bold;
     border: solid;
-    margin-top: 130px;
+    margin-top: 90px;
     cursor: pointer;   
 }
 
@@ -357,15 +358,16 @@ body{
 #login-title, #signup-title{
     font-family: sans-serif;
     color: white;
-    font-weight: bold;   
+    font-weight: bold;
+    font-size: 25px;   
 }
 #login-page {
     background: rgb(13 85 167);
-    margin-top: 100px;
-    padding:30px;
-    padding-left: 100px;
-    padding-right: 100px;
-    border-radius: 40px;
+    margin-top: 40px;
+    padding:10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 30px;
 }
 
 #email-heading, #password-heading, #name-heading, #username-heading {
@@ -380,8 +382,8 @@ body{
 
 #login-btn, #signup-btn{
     padding: 5px;
-    padding-left: 30px ;
-    padding-right: 30px;
+    padding-left: 25px ;
+    padding-right: 25px;
     border-radius: 8px;
     font-family: sans-serif;
     font-weight: bolder;
@@ -392,11 +394,12 @@ body{
 
 #signup-page {
     background: rgb(13 85 167);
-    margin-top: 12px;
-    padding:30px;
-    padding-left: 100px;
-    padding-right: 100px;
-    border-radius: 40px;
+    margin-top: 10px;
+    padding:20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 30px;
+    margin-bottom: 120px;
 }
 
 #product-description, #category-description, #user-description{
@@ -420,7 +423,7 @@ body{
 }
 #category-header{
     font-family: sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
 }
 #category_id, #user-id{

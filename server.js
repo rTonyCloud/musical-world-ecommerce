@@ -9,10 +9,6 @@ const sequelize = require('./config/connection');
 // to get the path to stylesheet
 const path = require('path');
 
-const productData = require('./seeds/product-seeds');
-const categoryData = require('./seeds/category-seeds');
-const userData = require('./seeds/user-seeds');
-
 // import helpers
 const helpers = require('./utils/helpers');
 
@@ -22,6 +18,7 @@ const hbs = exphbs.create({helpers});
 
 // import express session
 const session = require('express-session');
+const { Category, Product, User } = require('./models');
 
 // strip payment gateway
 const stripe = require('stripe')('sk_test_51JcI4GIIfnjJMh6dv5FMyzh30rj0hFy545IAqlUibVch7fmGv4b1COPLO3QOY1jW67SpDrSvedIODao3m63JrnyN00IeNKZiwt');
@@ -136,23 +133,32 @@ app.get('/all-products', (req, res) =>{
 
 //=============================================================================================
 
-// For Single Product
+// For users
 app.get('/user', (req, res) =>{
-    res.render("user", userData);
+    User.findAll({raw: true}).then(userData => {
+        const data = {userData}
+        res.render("user", data)
+    })
 })
 
-// For Multiple Product
+// For all Products
 app.get('/products', (req, res) =>{
-    console.log("this is the product data", productData);
-    res.render("products", productData);
+    Product.findAll({raw: true}).then(productData => {
+        const data = {productData}
+        res.render("products", data)
+    })
 })
-// For Category
+// For all Categories
 app.get('/category', (req, res) =>{
-    
-    res.render("category", categoryData);
+    Category.findAll({raw:true}).then(categoryData =>{
+        const data = {categoryData}
+        res.render("category", data);
+    })  
 })
 
 // For notfound
 app.get('*', (req, res) =>{
     res.render("notfound", {message: 'Sorry, page Not found!'});
 })
+
+
