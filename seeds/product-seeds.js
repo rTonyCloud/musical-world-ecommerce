@@ -20,7 +20,7 @@ const productData = [
   },
   {
     sku: 100121,
-    picture: '/images/piano/piano-beginner.JPG',
+    picture: '/images/piano/Piano-beginner.JPG',
     product_name: "Piano Beginner",
     price: 877.99,
     stock: 02,
