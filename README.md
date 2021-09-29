@@ -43,13 +43,8 @@
 
 ## Overview Links
 - [Application launched in Heroku](https://music-world-e-commerce.herokuapp.com/products)
-<<<<<<< HEAD
 - [Application walkthrough](https://watch.screencastify.com/v/9sRcfDbkBQJnXRCZYhMR)
 - [GitHub Repository](https://github.com/mirzadev/music-world-ecommerce)
-=======
-- [Application walkthrough](https://watch.screencastify.com/v/AfRG9DIdN2pxYvxXplYz)
-- [GitHub Repository](https://mirzadev.github.io/music-world-ecommerce/)
->>>>>>> ad263ee7888b84d5bc84f8ce9130724613796552
 
 
 ## User Story
