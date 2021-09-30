@@ -68,7 +68,7 @@ sequelize.sync({ force: false }).then(() => {
 
   // Landing Page
   app.get('/', (req, res) =>{
-      res.render("main");
+      res.render("homepage");
   })
 
 // For dashboard
