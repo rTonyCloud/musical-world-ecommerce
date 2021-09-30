@@ -132,6 +132,7 @@ app.get('/all-products', (req, res) =>{
 
 
 //=============================================================================================
+//Dynamicall generated data
 
 // For users
 app.get('/user', (req, res) =>{
@@ -152,6 +153,7 @@ app.get('/products', (req, res) =>{
 app.get('/category', (req, res) =>{
     Category.findAll({raw:true}).then(categoryData =>{
         const data = {categoryData}
+        console.log(data);
         res.render("category", data);
     })  
 })
