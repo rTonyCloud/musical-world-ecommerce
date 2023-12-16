@@ -1,6 +1,6 @@
 const { Product } = require('../models');
 
-// List of products   'id', 'picture','product_name', 'price', 'stock', 'category_id', 'add_to_cart_option']
+
 const productData = [
   {
     sku: 100101,
@@ -20,7 +20,7 @@ const productData = [
   },
   {
     sku: 100121,
-    picture: '/images/piano/piano-beginner.JPG',
+    picture: '/images/piano/Piano-beginner.JPG',
     product_name: "Piano Beginner",
     price: 877.99,
     stock: 02,
@@ -28,7 +28,7 @@ const productData = [
   },
   {
     sku: 200101,
-    picture: '/images/guitar/guitar-blue.JPG',
+    picture: '/images/Guitar/guitar-blue.JPG',
     product_name: "Guitar Blue",
     price: 851.99,
     stock: 04,
@@ -36,7 +36,7 @@ const productData = [
   },
   {
     sku: 200111,
-    picture: '/images/guitar/guitar-electric-italian.JPG',
+    picture: '/images/Guitar/guitar-electric-italian.JPG',
     product_name: "Guitar Electric Italian",
     price: 1299.99,
     stock: 02,
@@ -44,7 +44,7 @@ const productData = [
   },
   {
     sku: 200121,
-    picture: '/images/guitar/guitar-regular.JPG',
+    picture: '/images/Guitar/guitar-regular.JPG',
     product_name: "Guitar Regular",
     price: 354.99,
     stock: 07,
@@ -148,7 +148,6 @@ const productData = [
   },
 ];
 
-
 const seedProducts = () => Product.bulkCreate(productData);
 
-module.exports = productData;
+module.exports = seedProducts;
